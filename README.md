@@ -4,9 +4,7 @@ Proyecto Final Grupal — Programación Web — ITM 2026
 
 ## Integrantes
 
-- [Nombre Integrante 1]
-- [Nombre Integrante 2]
-- [Nombre Integrante 3]
+- Juan Esteban Montoya Mejía
 
 ## Descripción
 
