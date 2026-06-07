@@ -1,27 +1,30 @@
 namespace GymManagement.API.DTOs;
 
-public record TrainerDto(
-    int Id,
-    string FirstName,
-    string LastName,
-    string Email,
-    string Phone,
-    string Specialization,
-    DateTime HireDate
-);
+public class TrainerDto
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public string Specialization { get; set; } = string.Empty;
+    public DateTime HireDate { get; set; }
+}
 
-public record CreateTrainerDto(
-    string FirstName,
-    string LastName,
-    string Email,
-    string Phone,
-    string Specialization
-);
+public class CreateTrainerDto
+{
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public string Specialization { get; set; } = string.Empty;
+}
 
-public record UpdateTrainerDto(
-    string FirstName,
-    string LastName,
-    string Email,
-    string Phone,
-    string Specialization
-);
+public class UpdateTrainerDto
+{
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public string Specialization { get; set; } = string.Empty;
+}

@@ -2,33 +2,36 @@ using GymManagement.Domain.Enums;
 
 namespace GymManagement.API.DTOs;
 
-public record GymClassDto(
-    int Id,
-    string Name,
-    string Description,
-    DateTime Schedule,
-    int DurationMinutes,
-    int MaxCapacity,
-    ClassStatus Status,
-    int TrainerId,
-    string TrainerName
-);
+public class GymClassDto
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public DateTime Schedule { get; set; }
+    public int DurationMinutes { get; set; }
+    public int MaxCapacity { get; set; }
+    public ClassStatus Status { get; set; }
+    public int TrainerId { get; set; }
+    public string TrainerName { get; set; } = string.Empty;
+}
 
-public record CreateGymClassDto(
-    string Name,
-    string Description,
-    DateTime Schedule,
-    int DurationMinutes,
-    int MaxCapacity,
-    int TrainerId
-);
+public class CreateGymClassDto
+{
+    public string Name { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public DateTime Schedule { get; set; }
+    public int DurationMinutes { get; set; }
+    public int MaxCapacity { get; set; }
+    public int TrainerId { get; set; }
+}
 
-public record UpdateGymClassDto(
-    string Name,
-    string Description,
-    DateTime Schedule,
-    int DurationMinutes,
-    int MaxCapacity,
-    ClassStatus Status,
-    int TrainerId
-);
+public class UpdateGymClassDto
+{
+    public string Name { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public DateTime Schedule { get; set; }
+    public int DurationMinutes { get; set; }
+    public int MaxCapacity { get; set; }
+    public ClassStatus Status { get; set; }
+    public int TrainerId { get; set; }
+}

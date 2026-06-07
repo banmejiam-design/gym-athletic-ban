@@ -1,27 +1,30 @@
 namespace GymManagement.API.DTOs;
 
-public record MemberDto(
-    int Id,
-    string FirstName,
-    string LastName,
-    string Email,
-    string Phone,
-    DateTime DateOfBirth,
-    DateTime RegistrationDate
-);
+public class MemberDto
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public DateTime DateOfBirth { get; set; }
+    public DateTime RegistrationDate { get; set; }
+}
 
-public record CreateMemberDto(
-    string FirstName,
-    string LastName,
-    string Email,
-    string Phone,
-    DateTime DateOfBirth
-);
+public class CreateMemberDto
+{
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public DateTime DateOfBirth { get; set; }
+}
 
-public record UpdateMemberDto(
-    string FirstName,
-    string LastName,
-    string Email,
-    string Phone,
-    DateTime DateOfBirth
-);
+public class UpdateMemberDto
+{
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public DateTime DateOfBirth { get; set; }
+}
